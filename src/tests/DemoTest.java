@@ -12,6 +12,9 @@ public class DemoTest {
 		System.setProperty("webdriver.chrome.driver", "driver_lib\\chromedriver.exe");
 
 		WebDriver driver = new ChromeDriver();
+		driver.manage().window().maximize();
+		driver.navigate().to("https://www.google.com/");
+		driver.close();
 	}
 
 }
